@@ -1,0 +1,22 @@
+$('#openSlide .slidB a').each(function(){
+	$(this).hover(function(){
+		var pWidth = $(this).children('.name').width();
+		$(this).children('.name').children('u').stop().animate({'width':pWidth},200);
+	},function(){
+		$(this).children('.name').children('u').stop().animate({'width':"0"},200);
+	});
+});
+
+
+
+
+
+.mSection1 #openSlide .name {display: inline-block;position: relative;font-size: 15px;color: #1b1b1c;font-weight: 500;line-height: 1.6;}
+.mSection1 #openSlide .name u {text-decoration: none;position: absolute;bottom: 0;left: 0;display: inline-block;width: 0;height: 1px;background: #1b1b1c;}
+
+
+
+
+
+
+<p class="name">안수현 강사 <u></u></p>
